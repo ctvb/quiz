@@ -21,3 +21,9 @@ function countdown () {
         }
     }, 1000);
 }
+
+document.getElementById("question").innerHTML = "New text!";
+document.getElementById("a1").innerHTML = "New text!";
+document.getElementById("a2").innerHTML = "New text!";
+document.getElementById("a3").innerHTML = "New text!";
+document.getElementById("a4").innerHTML = "New text!";
