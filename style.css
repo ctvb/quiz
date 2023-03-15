@@ -1,0 +1,38 @@
+header {
+    background-color: var(--lav);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 25px;
+    max-width: 95%;
+    border: dashed var(--blue);
+}
+
+nav ul {
+    min-width: 50px;
+    padding: 10px 100px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+nav li {
+    margin: 20px;
+    display: inline-block;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card1 {
+    border-radius: 25px;
+    margin: 20px;
+    background-color: var(--lav);
+    text-align: center;
+    flex: 1 0 100%;
+    border: solid;
+    max-width: 95%;
+}
