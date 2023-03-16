@@ -17,8 +17,6 @@ var startTime = Date.now();
 // Update the countdown every second
 var timer = setInterval(() => {
     var timeLeft = duration - Math.floor((Date.now() - startTime) / 1000);
-
-    // countdown.innerHTML = `Time Left: ${timeLeft} seconds`;
     countdown.innerHTML = timeLeft + " seconds";
 
     if (timeLeft <= 0) {
