@@ -1,0 +1,50 @@
+body {
+    color: #fff;
+}
+
+.choice-container{
+    display: flex;
+    margin-bottom: 1rem;
+    width: 50%;
+    border-radius: 20px;
+    font-size: 2rem;
+}
+
+.choice-prefix {
+    padding: 5px;
+    color: blue;
+}
+
+.choice-text {
+    padding: 5px;
+    width: 50%;
+}
+
+.correct {
+    background: green;
+}
+
+.incorrect {
+    background: red;
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-container {
+        min-width: 15%;
+    }
+}
+
+
