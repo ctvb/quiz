@@ -2,6 +2,24 @@ body {
     color: #fff;
 }
 
+#time-remaining {
+    text-align: center;
+    font-size: 5rem;
+    border: solid;
+    background-color: black;
+    color: blue;
+    margin: 10px;
+}
+
+#question {
+    text-align: center;
+    font-size: 2.5rem;
+    border: solid;
+    background-color: black;
+    color: blue;
+    margin: 10px;
+}
+
 .choice-container{
     display: flex;
     margin-bottom: 1rem;
@@ -13,6 +31,7 @@ body {
 .choice-prefix {
     padding: 5px;
     color: blue;
+    border: solid;
 }
 
 .choice-text {

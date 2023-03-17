@@ -59,9 +59,29 @@ const MAX_QUESTIONS = 5;
 startGame = () => {
     questionCounter = 0;
     score = 0;
-    availableQuestions = (...questions);
+    // availableQuestions = (...questions)
     getNewQuestion()
 }
+
+// Set duration
+var duration = 60;
+
+// Get countdown element from DOM
+var countdown = document.getElementById("time");
+
+// Get start time
+var startTime = Date.now();
+
+// Update the countdown every second
+var timer = setInterval(() => {
+    var timeLeft = duration - Math.floor((Date.now() - startTime) / 1000);
+    countdown.innerHTML = timeLeft + " seconds";
+
+    if (timeLeft <= 0) {
+        clearInterval(timer);
+        countdown.innerHTML = "Time's up!";
+    }
+}, 1000);
 
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
@@ -88,7 +108,7 @@ getNewQuestion = () => {
 }
 
 choices.forEach(choice => {
-    choice.addEventListener('click' e => {
+    choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;
         
         acceptingAnswers = false;
