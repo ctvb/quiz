@@ -1,0 +1,10 @@
+body {
+    color: #fff;
+}
+#highScoresList {
+    list-style: none;
+}
+
+.high-score {
+    font-size: 3rem;
+}
