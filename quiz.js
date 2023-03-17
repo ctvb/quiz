@@ -81,6 +81,7 @@ var timer = setInterval(() => {
   }
 }, 1000);
 
+// Picks a new question
 getNewQuestion = () => {
   if (questionCounter > MAX_QUESTIONS) {
     localStorage.setItem('mostRecentScore', score);
@@ -127,9 +128,11 @@ choices.forEach((choice) => {
   });
 });
 
+// Adds to score
 incrementScore = (num) => {
   score += num;
   scoreText.innerText = score;
 };
 
+// Starts game
 startGame();
