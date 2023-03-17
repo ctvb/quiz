@@ -29,7 +29,7 @@ var questions = [
   },
   {
     question: 'What aspect of web development is JavaScript responsible for?',
-    choice1: 'JavaScript makes everyaspect of a webpage',
+    choice1: 'JavaScript makes every aspect of a webpage',
     choice2: 'JavaScript has nothing to do with web',
     choice3: 'JavaScript deals with the interactive features of the page',
     choice4: 'All of the above',
